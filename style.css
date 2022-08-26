@@ -1,0 +1,231 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DynaPuff', cursive;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1A2238;
+  color: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul {
+  display: flex;
+  padding: 12px;
+}
+
+a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none ;
+  padding: 10px;
+}
+
+li a {
+  display: inline-block;
+  transition: all .3s ease-in-out;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.logotitle {
+  cursor: pointer;
+}
+
+.logotitle:hover {
+  color: #ff6a3d;
+  transition: .3s ease-in-out;
+}
+
+.logoimg {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.btn-follow{
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background-color: #ff6a3d;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn-follow:hover {
+  background-color: #eaeaea;
+  color: #ff6a3d;
+  transition: .3s ease-in-out;
+  transform: rotate(3deg);
+}
+
+li a:hover {
+  color: #ff6a3d;
+  transform: rotate(3deg);
+}
+
+/* .container {
+  width: 1200px;
+  margin: 0 auto;
+} */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.diskripsi {
+  font-weight: bolder;
+  word-spacing: 5px;
+}
+
+.myfoto {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+  
+}
+
+.paralax {
+  background-image: url(images/2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tentang {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1A2238;
+  color: #eaeaea;
+  padding: 20px;
+  text-align: center;
+}
+
+.tentang button {
+  margin-top: 30px;
+}
+
+.tentang .diskripsi {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  letter-spacing: 10px;
+}
+
+.container {
+  margin-bottom: -10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  gap: 8px;
+  flex-wrap: wrap;
+  
+}
+
+.item {
+  background: #f7f7f7;
+  color: #222;
+  padding: 20px;
+  width: 25%;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 4);
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.card-diskripsi {
+  margin-top: 10px;
+  word-spacing: 3px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: -7px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #1A2238;
+  color: #ff6a3d;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 500px ) {
+  .card {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 0;
+    opacity: .9;
+  }
+
+  .item {
+    width: 100%;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .intro {
+    margin-top: 20px;
+  }
+
+  nav {
+    position: fixed;
+    background: #1A2238;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+  }
+
+  footer {
+    margin-bottom: 50px;
+    background-color: #1A2238;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }  
+}
